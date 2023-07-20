@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background: rgb(60, 46, 136);
+    padding: 10px;
+}
+
+.header .logo {
+    height: 45px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.campo-texto {
+    display: flex;
+    border: 1px solid #eee;
+    min-height: 150px;
+    margin: 35px 20px;
+    font-size: 20px;
+    padding: 18px;
+}
+
+.btn-press-speech {
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    background: #3c2f88;
+    color: #fff;
+    margin: 0 20px;
+}
+
+.btn-pressed {
+    background: rgb(182, 31, 31);
+}
