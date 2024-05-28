@@ -1,0 +1,16 @@
+<form class="full-form">
+  <mat-form-field class="example-full-width" appearance="outline">
+    <mat-label>Tipo de Estabelecimento</mat-label>
+    <input type="text"
+           placeholder="Hospitais, Clínicas, PS..."
+           aria-label="Tipo de Estabelecimento"
+           matInput
+           [formControl]="tipoEstabelecimentoControl"
+           [matAutocomplete]="auto">
+    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" [displayWith]="displayOpt" (optionSelected)='selectEstabelecimento($event.option.value)'>
+      @for (option of filteredOptions | async; track option) {
+        <mat-option [value]="option">{{option.nome}}</mat-option>
+      }
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

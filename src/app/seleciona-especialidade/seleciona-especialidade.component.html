@@ -1,0 +1,16 @@
+<form class="full-form">
+  <mat-form-field class="example-full-width" appearance="outline">
+    <mat-label>Especialidade</mat-label>
+    <input type="text"
+           placeholder="Cardiologia, Dermatologia, Acupuntura..."
+           aria-label="Especialidade"
+           matInput
+           [formControl]="especialiadeControl"
+           [matAutocomplete]="auto">
+    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" [displayWith]="displayOpt" (optionSelected)='selectEspecialidade($event.option.value)'>
+      @for (option of filteredOptions | async; track option) {
+        <mat-option [value]="option">{{option.nome}}</mat-option>
+      }
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

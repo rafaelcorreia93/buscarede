@@ -1,0 +1,30 @@
+.plano-grupo {
+  display: flex;
+  align-items: baseline;
+  column-gap: 24px;
+  padding: 8px;
+  color: #3c2e88;
+  border-bottom: 1px solid #eee;
+
+  img {
+    width: 40px;
+  }
+
+  label {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Campton Medium';
+  }
+}
+.plano-form {
+  width: 100%;
+
+  mat-form-field {
+    width: 100%;
+  }
+}
+.autocomplete-opt-viv {
+  font-size: 20px;
+  padding: 20px;
+  font-family: 'Open Sans';
+}

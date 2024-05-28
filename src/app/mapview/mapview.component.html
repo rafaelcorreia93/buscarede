@@ -1,0 +1,23 @@
+<!-- <img [src]="srcImg" alt=""> -->
+
+<!-- <form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Digite o local</mat-label>
+    <input matInput placeholder="Endereço" [formControl]="localControl">
+  </mat-form-field>
+</form> -->
+
+<!-- <button (click)="search()">Procurar</button> -->
+
+@if (showMap) {
+  <iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  referrerpolicy="no-referrer-when-downgrade"
+  [src]="srcEmbed">
+</iframe>
+}
+

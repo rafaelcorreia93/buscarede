@@ -1,0 +1,16 @@
+<form class="full-form">
+  <mat-form-field appearance="outline">
+    <mat-label>Procedimento</mat-label>
+    <input type="text"
+           placeholder="Digite um Procedimento..."
+           aria-label="Procedimento"
+           matInput
+           [formControl]="procedimentoControl"
+           [matAutocomplete]="auto">
+    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete" [displayWith]="displayOpt" (optionSelected)='selectProcedimento($event.option.value)'>
+      @for (option of filteredOptions | async; track option) {
+        <mat-option [value]="option">{{option.nome}}</mat-option>
+      }
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

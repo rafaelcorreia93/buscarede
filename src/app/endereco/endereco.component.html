@@ -1,0 +1,7 @@
+<form class="full-form">
+  <mat-form-field class="example-full-width" appearance="outline">
+    <mat-label>Informe um ponto de referência como endereço, UF, Município, Bairro, CEP, etc</mat-label>
+    <input #enderecoInput matInput placeholder="Endereço">
+  </mat-form-field>
+</form>
+<button (click)="getLocation()">Usar minha localização</button>

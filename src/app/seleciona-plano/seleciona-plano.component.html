@@ -1,0 +1,26 @@
+<!-- Autocomplete Grupo -->
+
+<form [formGroup]="planoForm" class="plano-form">
+  <mat-form-field appearance="outline">
+    <mat-label>Selecione o plano</mat-label>
+    <input type="text"
+           matInput
+           formControlName="planoGroup"
+           [matAutocomplete]="autoGroup">
+      <mat-autocomplete #autoGroup="matAutocomplete" [displayWith]="getOptionText" (optionSelected)='selectPlan($event.option.value)'>
+        @for (group of planoGroupOptions | async; track group) {
+          <mat-optgroup class="plano-outgrupo">
+            <div class="plano-grupo">
+              <img [src]="group.icon" alt="">
+              <label>{{group.nome}}</label>
+            </div>
+            @for (plano of group.plano; track plano) {
+              <mat-option [value]="plano" class="autocomplete-opt-viv">
+                {{plano.nome}}
+              </mat-option>
+            }
+          </mat-optgroup>
+        }
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
