@@ -70,3 +70,30 @@ body { margin: 0; font-family: "Open Sans", sans-serif; }
     width: 100%;
   }
 }
+
+.container-layout {
+  display: flex;
+  flex-direction: column;
+
+  > section {
+    padding: 0 24px 24px 24px;
+  }
+}
+
+section.column {
+  display: flex;
+  column-gap: 24px;
+}
+
+section.column > * {
+  flex: 1;
+}
+
+label.mdc-label {
+  font-size: 20px;
+}
+
+h1 {
+  padding: 24px;
+  color: #3c2e88;
+}

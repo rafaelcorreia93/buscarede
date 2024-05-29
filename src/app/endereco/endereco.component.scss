@@ -1,0 +1,24 @@
+.botao-vivest {
+  background: #fff;
+  border: 2px solid #7c73af;
+  border-radius: 10px;
+  height: 60px;
+  margin-bottom: 22px;
+  cursor: pointer;
+  padding: 0;
+  width: 76px;
+
+   img {
+    height: 100%;
+  }
+}
+
+.botao-vivest:hover {
+  background: #eceaf3;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}

@@ -1,9 +1,21 @@
 <h1>Busca de Rede</h1>
-<app-seleciona-plano/>
-<app-seleciona-tipo-estabelecimento/>
-<app-seleciona-especialidade/>
-<app-seleciona-procedimento/>
-<app-search-nome-prestador/>
-<app-endereco/>
-<app-select-atendimento-video/>
-<app-mapview/>
+<div class="container-layout">
+  <section>
+    <app-seleciona-plano/>
+  </section>
+  <section class="column">
+    <app-seleciona-tipo-estabelecimento/>
+    <app-seleciona-especialidade/>
+    <app-seleciona-procedimento/>
+  </section>
+  <section>
+    <app-search-nome-prestador/>
+  </section>
+  <section>
+    <app-endereco/>
+  </section>
+  <section>
+    <app-select-atendimento-video/>
+  </section>
+  <!-- <app-mapview/> -->
+</div>
