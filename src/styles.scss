@@ -97,3 +97,56 @@ h1 {
   padding: 24px;
   color: #3c2e88;
 }
+
+h3 {
+  color: #3c2e88;
+}
+
+.container-resultados {
+  padding: 24px;
+
+  table {
+    border-radius: 16px;
+    overflow: hidden;
+  }
+}
+
+.marcador-positivo i {
+  font-size: 18px;
+  color: #00be69;
+}
+.marcador-negativo i {
+  font-size: 18px;
+  color: #d21212;
+}
+
+
+.rede-essencial-positive {
+  width: 40px;
+  height: 40px;
+  margin: 20px 10px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.trigger-rede-essencial {
+  display: inline-flex;
+  padding: 0px 20px;
+  cursor: pointer;
+  align-items: center;
+
+  i {
+    font-size: 26px;
+    color: #e33e5a;
+  }
+
+  span {
+    padding: 3px 10px;
+    border-radius: 10px;
+    margin: 0 4px;
+    color: #a12c40;
+    background: #fcecef;
+  }
+}

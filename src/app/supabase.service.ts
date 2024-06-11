@@ -59,4 +59,23 @@ export class SupabaseService {
     if(data) return data;
     else return;
   }
+
+  async getPrestador() {
+    const { data, error } = await this.supabase
+    .from('prestador')
+    .select()
+
+    if(data) return data;
+    else return;
+  }
+
+  async getPrestadorById(id: number) {
+    const { data, error } = await this.supabase
+    .from('prestador')
+    .select()
+    .eq('id', id)
+
+    if(data) return data;
+    else return;
+  }
 }

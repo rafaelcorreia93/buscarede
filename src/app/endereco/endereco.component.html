@@ -7,3 +7,9 @@
   </form>
   <button (click)="getLocation()" class="botao-vivest"><img src="../../assets/imagens/Localização.svg" alt=""></button>
 </div>
+
+@if(loading) {
+  <div class="loading-adress">
+    Localizando seu endereço, aguarde...
+  </div>
+}

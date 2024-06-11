@@ -22,3 +22,19 @@
   align-items: center;
   column-gap: 24px;
 }
+
+.loading-adress {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(2px);
+  z-index: 2;
+  font-size: 22px;
+  color: #3c2e88;
+  font-family: 'Campton-semibold';
+}

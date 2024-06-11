@@ -1,0 +1,16 @@
+.container-map-directions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+  img {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .route-detail {
+    text-align: center;
+    width: 100%;
+  }
+}
