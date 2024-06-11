@@ -61,7 +61,7 @@ export class EnderecoComponent {
   }
 
   ngAfterViewInit() {
-
+this.tryGoogleMaps();
 
   }
 
@@ -78,7 +78,7 @@ export class EnderecoComponent {
             console.log(res);
             let completeData = res as GeoloactionResponse;
             let adress = completeData.address;
-            let adressFormated = adress.road + ', ' + adress.subdistrict + ', ' + adress.city + ', ' + adress.state;
+            let adressFormated = adress.road + ', ' + adress.subdistrict ? adress.subdistrict : '' + ', ' + adress.city;
             this.fillAdress(adressFormated);
             this.loading = false;
           });
